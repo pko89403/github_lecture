@@ -98,3 +98,9 @@
 - `octofit-tracker/frontend` 디렉터리 존재 확인, React 앱 생성, react/bootstrap/react-router-dom 설치
 - `src/index.js`에 bootstrap CSS import, `.gitignore` 변경 금지 지침
 - remember hook 조건을 만족하도록 작업 후 `scripts/ppt_hook.sh` 실행
+
+## Hook 자동 추가 (2026-03-17 02:35 UTC)
+## React navigation update
+- App.js에 react-router-dom 기반 네비게이션 추가, 모든 컴포넌트를 라우팅함
+- 네비게이션과 각 컴포넌트에서 backend Codespace REST API를 fetch하여 렌더링하도록 유지
+- remember 훅은 항상 마지막이므로 작업 후 scripts/ppt_hook.sh 실행
