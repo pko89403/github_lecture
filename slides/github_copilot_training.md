@@ -128,3 +128,9 @@
 - GitHub Repository visibility (public/private/internal) 개념 설명 필요
 - 설명에는 Copilot 실습 리포지토리 설정 예시, GitHub 정책/관련 overwrite check 포함
 - remember 훅 규칙 준수, 작업 후 scripts/ppt_hook.sh 실행
+
+## Hook 자동 추가 (2026-03-17 04:28 UTC)
+## Repository Permission Roles
+- Repository에 사용할 수 있는 역할(Owner, Admin, Maintainer, Write, Triage, Read 등) 설명
+- 각 역할의 권한 범위, Copilot 실습에서 권한 통제 사례, 정책/조정 포인트 포함
+- remember hooks 규칙을 지켜 scripts/ppt_hook.sh을 마지막에 실행
