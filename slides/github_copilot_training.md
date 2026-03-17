@@ -41,3 +41,8 @@
 - GitHub UI에서 `.github/instructions` 폴더를 참고하면 실습 지침(브랜치 전략·PR 템플릿·리뷰 기준)을 빠르게 열람할 수 있음
 - Copilot 모드별 요청 예시와 Actions/Docs 링크를 문서에 담아두고 실습 중 참조
 - 지침 문서를 업데이트하면 슬랙/이메일로 알림을 보내어 팀원들과 공유하면 효과적
+
+## 7. Codespaces를 통한 실습 환경
+- Codespaces를 열면 브라우저/VS Code에서 바로 `github_lecture` 개발 환경 실행 가능
+- 미리 구성된 `.devcontainer/devcontainer.json`이 있다면 Copilot + Actions 연동 상태를 바로 확인
+- 학습자에게 Codespaces URL을 공유해 실습 환경을 통일하고, PR 생성 전 필요한 검증을 모두 자동화할 수 있음
