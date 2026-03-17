@@ -61,6 +61,7 @@
 - **시각 자료 제안**: Codespace/Agent 화면 스크린샷(코드패널, Copilot Chat, Agent 로그)과 `pip install` 터미널 로그를 슬라이드 하단에 포함하면 참가자들이 “이런 화면을 보면 작업이 잘 되고 있는지” 직관적으로 이해할 수 있습니다.
 
 ## 9. Harness 엔지니어링 참고 자료
+- `.github/prompts/harness_remember_hook.prompt.md`를 참고하면 “작업 → 훅” 흐름에서 remember 훅을 항상 마지막 단계로 실행하는 규칙을 Copilot에게 알려주는 프롬프트를 확인할 수 있습니다.
 - **3단계 백그라운드**: 이 실습에서는 Copilot 응답을 안내하는 `.github/instructions/octofit_tracker_setup_project.instructions.md`와 `.github/instructions/octofit_tracker_django_backend.instructions.md` 같은 커스텀 지침을 활용합니다. Django 백엔드 가이드라인, MongoDB 설정, 프로젝트 구조가 포함되어 있어 Copilot은 하네스 관련 코드 생성 시 해당 내용을 참조합니다.
 - `.github/instructions/octofit_tracker_setup_project.instructions.md`는 프로젝트 구조·가상환경·포트·Agent 제약을, `.github/instructions/octofit_tracker_django_backend.instructions.md`는 Django/MongoDB 세부 설정을 담고 있으니, 프롬프트 입력 전 반드시 살펴보게 안내하세요.
 - `.github/instructions/harness_engineering.instructions.md`에는 목적, 환경 조건, Codespace 기반 작업 흐름, Agent 제약, 포트/보안, 프롬프트·스크린샷 참조 링크를 담아 두었습니다.
