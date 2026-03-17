@@ -104,3 +104,9 @@
 - App.js에 react-router-dom 기반 네비게이션 추가, 모든 컴포넌트를 라우팅함
 - 네비게이션과 각 컴포넌트에서 backend Codespace REST API를 fetch하여 렌더링하도록 유지
 - remember 훅은 항상 마지막이므로 작업 후 scripts/ppt_hook.sh 실행
+
+## Hook 자동 추가 (2026-03-17 02:36 UTC)
+## React components logging update
+- 각 컴포넌트에서 가져온 payload와 호출한 REST API endpoint를 `console.log`로 출력하도록 수정
+- pagination(.results)과 일반 배열을 모두 처리하는 공통 payload 변수 유지
+- remember 훅은 항상 마지막이므로 작업 후 `scripts/ppt_hook.sh` 실행
