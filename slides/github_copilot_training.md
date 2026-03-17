@@ -46,3 +46,5 @@
 - Codespaces를 열면 브라우저/VS Code에서 바로 `github_lecture` 개발 환경 실행 가능
 - 미리 구성된 `.devcontainer/devcontainer.json`이 있다면 Copilot + Actions 연동 상태를 바로 확인
 - 학습자에게 Codespaces URL을 공유해 실습 환경을 통일하고, PR 생성 전 필요한 검증을 모두 자동화할 수 있음
+- **Devcontainer**는 Codespace 시작 시 어떤 도구/버전/포트를 열지 지정하는 설정 파일 집합이며, Codespace는 그 devcontainer를 기반으로 실행되는 “클라우드 IDE”임
+- devcontainer 설정이 없으면 로컬에서 환경을 직접 맞춰야 하지만, Codespace + devcontainer를 활용하면 모든 학습자가 동일한 빌드/런 환경을 즉시 띄울 수 있음
