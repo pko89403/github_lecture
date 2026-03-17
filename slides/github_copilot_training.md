@@ -51,3 +51,9 @@
 - 학습자에게 Codespaces URL을 공유해 실습 환경을 통일하고, PR 생성 전 필요한 검증을 모두 자동화할 수 있음
 - **Devcontainer**는 Codespace 시작 시 어떤 도구/버전/포트를 열지 지정하는 설정 파일 집합이며, Codespace는 그 devcontainer를 기반으로 실행되는 “클라우드 IDE”임
 - devcontainer 설정이 없으면 로컬에서 환경을 직접 맞춰야 하지만, Codespace + devcontainer를 활용하면 모든 학습자가 동일한 빌드/런 환경을 즉시 띄울 수 있음
+
+## 8. 실습 환경 준비 단계 (Python 가상환경 + 요구사항)
+- **가상환경 생성**: Copilot에게 `python3 -m venv octofit-tracker/backend/venv` 명령을 요청하면 backend 디렉터리 내부에 통일된 가상환경을 자동으로 만듦. `.github/instructions/octofit_tracker_setup_project.instructions.md` 규칙을 따라 루트 디렉터리는 변경하지 않고 경로를 명시합니다.
+- **`requirements.txt` 작성**: `backend/requirements.txt`에 Django, djangorestframework, djongo, pymongo 등 실습 전용 패키지를 목록으로 만들도록 지시. Agent에게 “파일을 생성하고 아래 의존성을 추가해 주세요”라는 형식으로 요청하면 바로 작성됨.
+- **패키지 설치**: 가상환경을 활성화한 뒤 `pip install -r backend/requirements.txt`를 실행해 모든 Python 요구사항을 설치하고, 설치 로그와 `pip freeze` 결과를 함께 확인하여 안정성을 보장합니다.
+- 이 세 단계가 완료되면 Copilot agent mode 실습이 시작되기 전에 backend 가상환경과 의존성이 모두 갖춰진 상태가 됩니다. 슬라이드에 “Step 2: 환경 준비”로 붙이면 학습 흐름이 명확해집니다.
