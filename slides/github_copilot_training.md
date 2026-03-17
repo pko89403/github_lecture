@@ -59,3 +59,8 @@
 - 이 세 단계가 완료되면 Copilot agent mode 실습이 시작되기 전에 backend 가상환경과 의존성이 모두 갖춰진 상태가 됩니다. 슬라이드에 “Step 2: 환경 준비”로 붙이면 학습 흐름이 명확해집니다.
 - **프롬프트 예시**: `.github/instructions/prompt_instruction_guide.instructions.md` 템플릿을 따라 “현재 `build-octofit-app` 브랜치에서 `backend/requirements.txt`를 만들고 필요한 의존성을 추가한 뒤, `pip install -r backend/requirements.txt`를 실행해 주세요”와 같이 상황·행동·제약·확인 항목을 한 문단으로 적어, `scripts/ppt_hook.sh`를 돌려 슬라이드에 자동반영하세요.
 - **시각 자료 제안**: Codespace/Agent 화면 스크린샷(코드패널, Copilot Chat, Agent 로그)과 `pip install` 터미널 로그를 슬라이드 하단에 포함하면 참가자들이 “이런 화면을 보면 작업이 잘 되고 있는지” 직관적으로 이해할 수 있습니다.
+
+## 9. Harness 엔지니어링 참고 자료
+- `.github/instructions/harness_engineering.instructions.md`에는 목적, 환경 조건, Codespace 기반 작업 흐름, Agent 제약, 포트/보안, 프롬프트·스크린샷 참조 링크를 담아 두었습니다.
+- `.github/prompts/harness_engineering.prompt.md` 템플릿을 복사해 Copilot에게 특정 테스트 하네스 단위를 생성하라고 요청하면, 상황·행동·제약·확인 항목이 자동으로 반영됩니다.
+- `scripts/ppt_hook.sh`를 통해 새로운 하네스 관련 메모/요약을 Markdown에 붙여 넣고, 나중에 PowerPoint로 옮기는 흐름을 유지하면 슬라이드와 실습 문서가 항상 동기화됩니다.
