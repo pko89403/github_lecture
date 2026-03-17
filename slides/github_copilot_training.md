@@ -116,3 +116,9 @@
 - App.js 및 모든 컴포넌트에서 Bootstrap 테이블/버튼/heading/link/navigation/form/card/modal 스타일을 사용해 UI 통일
 - 각 컴포넌트의 데이터 영역에는 동일한 테이블 레이아웃 적용, modal이나 form 필요한 곳만 포함
 - remember 훅 룰에 따라 작업 후 scripts/ppt_hook.sh 실행하여 슬라이드에 기록
+
+## Hook 자동 추가 (2026-03-17 02:37 UTC)
+## App.css styling update
+- App.css에 배경/텍스트/테이블/버튼/제목/링크/네비게이션/폼/카드/모달에 색상 추가
+- 앱 왼쪽에 octofitapp-small 로고 배치, favicon 등록도 포함
+- remember 훅 규칙에 따라 작업 후 scripts/ppt_hook.sh 실행
