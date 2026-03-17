@@ -78,3 +78,10 @@
 ## Django API 루트 확인
 - `/` 경로가 API entrypoint임을 확인하고, `octofit-tracker/backend/octofit_tracker/urls.py`에 `api_root` 뷰가 등록되어 있는지 점검
 - API 루트가 정상적으로 응답하는지 Django 서버와 Copilot 테스트 스크립트로 검증한 후 이 정보를 remember 훅에 기록
+
+## Hook 자동 추가 (2026-03-17 02:26 UTC)
+## Step 4: Codespace URL, launch, API testing
+- Codespace URL 환경 변수 `$CODESPACE_NAME`을 변수로 유지하며 https://$CODESPACE_NAME-8000.app.github.dev/api/activities/ 같은 REST 엔드포인트를 구성
+- `urls.py`에서 API root과 component 경로를 codespace URL을 사용하는 방식으로 대체하고 HTTPS 인증서 문제 대비
+- `settings.py` `ALLOWED_HOSTS`에 codespace와 localhost의 조합을 포함
+- launch.json으로 서버 시작 후 curl로 API (예: `/api/activities/`) 호출하여 응답 확인
