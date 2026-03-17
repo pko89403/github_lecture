@@ -92,3 +92,9 @@
 - `urls.py`에서 API root과 component 경로를 codespace URL을 사용하는 방식으로 대체하고 HTTPS 인증서 문제 대비
 - `settings.py` `ALLOWED_HOSTS`에 codespace와 localhost의 조합을 포함
 - launch.json으로 서버 시작 후 curl로 API (예: `/api/activities/`) 호출하여 응답 확인
+
+## Hook 자동 추가 (2026-03-17 02:32 UTC)
+## Chapter 5: React frontend setup reminder
+- `octofit-tracker/frontend` 디렉터리 존재 확인, React 앱 생성, react/bootstrap/react-router-dom 설치
+- `src/index.js`에 bootstrap CSS import, `.gitignore` 변경 금지 지침
+- remember hook 조건을 만족하도록 작업 후 `scripts/ppt_hook.sh` 실행
