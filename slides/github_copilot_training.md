@@ -27,6 +27,7 @@
 - **Agent Mode**: Copilot이 코드 변경, 테스트, 검토 등 일련의 액션을 자체 조율
 - **Agent 브랜치 생성 예시**: `build-octofit-app` 브랜치 생성을 Copilot에게 맡기는 이유는 에이전트가 실습 기준선을 자동으로 만들고, 일관된 브랜치와 푸시 수행을 통해 Agent 워크플로를 체험하게 하기 위함
 - 에이전트에게 맡기면 오타 없이 브랜치가 생성되고 푸시되어 Mona나 리뷰어가 쉽게 따라올 수 있고, 명령→Continue→결과 확인 흐름을 반복적으로 경험해 답답함 없이 자동화에 익숙해질 수 있음
+- **Agent 프롬프트 예시**: “OctoFit Tracker 앱 구조를 확인하세요.”라고 요청하면 Copilot agent가 `.github/instructions/octofit_tracker_setup_project.instructions.md`에 정리된 backend/venv+frontend 구조와 에이전트 정책을 다시 안내하고, 그 다음 Task로 이어갈 수 있도록 해 줍니다.
 
 ## 4. Copilot과 GitHub 연결 실습 아이디어
 - 단계 1: 리포지토리 클론 → Copilot 사이드바 열기
