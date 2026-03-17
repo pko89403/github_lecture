@@ -110,3 +110,9 @@
 - 각 컴포넌트에서 가져온 payload와 호출한 REST API endpoint를 `console.log`로 출력하도록 수정
 - pagination(.results)과 일반 배열을 모두 처리하는 공통 payload 변수 유지
 - remember 훅은 항상 마지막이므로 작업 후 `scripts/ppt_hook.sh` 실행
+
+## Hook 자동 추가 (2026-03-17 02:36 UTC)
+## App style consistency note
+- App.js 및 모든 컴포넌트에서 Bootstrap 테이블/버튼/heading/link/navigation/form/card/modal 스타일을 사용해 UI 통일
+- 각 컴포넌트의 데이터 영역에는 동일한 테이블 레이아웃 적용, modal이나 form 필요한 곳만 포함
+- remember 훅 룰에 따라 작업 후 scripts/ppt_hook.sh 실행하여 슬라이드에 기록
