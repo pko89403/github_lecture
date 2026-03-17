@@ -122,3 +122,9 @@
 - App.css에 배경/텍스트/테이블/버튼/제목/링크/네비게이션/폼/카드/모달에 색상 추가
 - 앱 왼쪽에 octofitapp-small 로고 배치, favicon 등록도 포함
 - remember 훅 규칙에 따라 작업 후 scripts/ppt_hook.sh 실행
+
+## Hook 자동 추가 (2026-03-17 04:26 UTC)
+## 오후 세션 2 - Repository Visibility
+- GitHub Repository visibility (public/private/internal) 개념 설명 필요
+- 설명에는 Copilot 실습 리포지토리 설정 예시, GitHub 정책/관련 overwrite check 포함
+- remember 훅 규칙 준수, 작업 후 scripts/ppt_hook.sh 실행
