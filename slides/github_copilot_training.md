@@ -68,6 +68,13 @@
 - `.github/prompts/harness_engineering.prompt.md` 템플릿을 복사해 Copilot에게 특정 테스트 하네스 단위를 생성하라고 요청하면, 상황·행동·제약·확인 항목이 자동으로 반영됩니다.
 - `scripts/ppt_hook.sh`를 통해 새로운 하네스 관련 메모/요약을 Markdown에 붙여 넣고, 나중에 PowerPoint로 옮기는 흐름을 유지하면 슬라이드와 실습 문서가 항상 동기화됩니다.
 
+## 10. PPT 고도화 체크포인트
+- 섹션별로 슬라이드 타이틀/본문을 구성하고 해당 참조 링크(.github/instructions/.github/prompts)를 함께 넣어 흐름을 명확히 전개하세요.
+- “Prompt vs Instruction” 팁과 `.github/prompts/harness_remember_hook.prompt.md` 기억 규칙을 카드나 사이드바로 강조하여 WHAT/HOW 패턴을 시각화합니다.
+- Step 2~4 Codespace/Copilot 화면, launch.json 설정, `curl https://$CODESPACE_NAME-8000.app.github.dev/api/[component]/` 로그를 artifacts로 캡처하고 슬라이드 내부에서 보여주면 정상/실패 판단이 쉬워집니다.
+- 마지막 슬라이드 또는 부록에 `scripts/ppt_hook.sh`의 “Hook 자동 추가” 블록을 붙여 실습 기록을 공유하고, 슬라이드 제작 후 추가된 기록이 기억 훅 흐름을 따라가도록 합니다.
+- Step 3/4 끝에 “테스트/remember 훅 실행 체크리스트”(예: `python manage.py test`, `curl ...`, remember hook 실행) 텍스트를 붙여 참가자나 발표자가 실습 완료 여부를 빠르게 확인할 수 있도록 합니다.
+
 ## Hook 자동 추가 (2026-03-17 02:01 UTC)
 ## Django 앱 업데이트
 - octofit-tracker/backend/octofit_tracker 내 Django 파일 점검
