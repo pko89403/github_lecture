@@ -73,3 +73,8 @@
 - octofit-tracker/backend/octofit_tracker 내 Django 파일 점검
 - settings.py의 MongoDB 연결과 CORS 설정을 Copilot이 조정
 - 해당 작업은 remember 훅 조건(작업 이후 scripts/ppt_hook.sh 실행)을 만족시키기 위한 메모
+
+## Hook 자동 추가 (2026-03-17 02:03 UTC)
+## Django API 루트 확인
+- `/` 경로가 API entrypoint임을 확인하고, `octofit-tracker/backend/octofit_tracker/urls.py`에 `api_root` 뷰가 등록되어 있는지 점검
+- API 루트가 정상적으로 응답하는지 Django 서버와 Copilot 테스트 스크립트로 검증한 후 이 정보를 remember 훅에 기록
