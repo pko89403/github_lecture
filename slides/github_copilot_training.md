@@ -57,3 +57,5 @@
 - **`requirements.txt` 작성**: `backend/requirements.txt`에 Django, djangorestframework, djongo, pymongo 등 실습 전용 패키지를 목록으로 만들도록 지시. Agent에게 “파일을 생성하고 아래 의존성을 추가해 주세요”라는 형식으로 요청하면 바로 작성됨.
 - **패키지 설치**: 가상환경을 활성화한 뒤 `pip install -r backend/requirements.txt`를 실행해 모든 Python 요구사항을 설치하고, 설치 로그와 `pip freeze` 결과를 함께 확인하여 안정성을 보장합니다.
 - 이 세 단계가 완료되면 Copilot agent mode 실습이 시작되기 전에 backend 가상환경과 의존성이 모두 갖춰진 상태가 됩니다. 슬라이드에 “Step 2: 환경 준비”로 붙이면 학습 흐름이 명확해집니다.
+- **프롬프트 예시**: `.github/instructions/prompt_instruction_guide.instructions.md` 템플릿을 따라 “현재 `build-octofit-app` 브랜치에서 `backend/requirements.txt`를 만들고 필요한 의존성을 추가한 뒤, `pip install -r backend/requirements.txt`를 실행해 주세요”와 같이 상황·행동·제약·확인 항목을 한 문단으로 적어, `scripts/ppt_hook.sh`를 돌려 슬라이드에 자동반영하세요.
+- **시각 자료 제안**: Codespace/Agent 화면 스크린샷(코드패널, Copilot Chat, Agent 로그)과 `pip install` 터미널 로그를 슬라이드 하단에 포함하면 참가자들이 “이런 화면을 보면 작업이 잘 되고 있는지” 직관적으로 이해할 수 있습니다.
