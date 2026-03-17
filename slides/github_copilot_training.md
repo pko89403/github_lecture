@@ -36,3 +36,12 @@
 - Copilot 추천 코드에 라인을 추가하기 전 항상 코드 리뷰
 - Actions 워크플로로 포맷/보안 스캔 통합하면 PR 워크플로가 매끄러움
 - Q&A: 실무 팀에서 Copilot 도입할 때 경험 공유
+
+## 6. `.github/instructions` 활용 안내
+- GitHub UI에서 `.github/instructions` 폴더를 참고하면 실습 지침(브랜치 전략·PR 템플릿·리뷰 기준)을 빠르게 열람할 수 있음
+- Copilot 모드별 요청 예시와 Actions/Docs 링크를 문서에 담아두고 실습 중 참조
+- 지침 문서를 업데이트하면 슬랙/이메일로 알림을 보내어 팀원들과 공유하면 효과적
+## 6. `.github/instructions` 활용 안내
+- GitHub UI에서 `.github/instructions` 폴더를 참고하면 실습 지침(브랜치 전략·PR 템플릿·리뷰 기준)을 빠르게 열람할 수 있음
+- Copilot 모드별 요청 예시와 Actions/Docs 링크를 문서에 담아두고 실습 중 참조
+- 지침 문서를 업데이트하면 슬랙/이메일로 알림을 보내어 팀원들과 공유하면 효과적
