@@ -67,3 +67,9 @@
 - `.github/instructions/harness_engineering.instructions.md`에는 목적, 환경 조건, Codespace 기반 작업 흐름, Agent 제약, 포트/보안, 프롬프트·스크린샷 참조 링크를 담아 두었습니다.
 - `.github/prompts/harness_engineering.prompt.md` 템플릿을 복사해 Copilot에게 특정 테스트 하네스 단위를 생성하라고 요청하면, 상황·행동·제약·확인 항목이 자동으로 반영됩니다.
 - `scripts/ppt_hook.sh`를 통해 새로운 하네스 관련 메모/요약을 Markdown에 붙여 넣고, 나중에 PowerPoint로 옮기는 흐름을 유지하면 슬라이드와 실습 문서가 항상 동기화됩니다.
+
+## Hook 자동 추가 (2026-03-17 02:01 UTC)
+## Django 앱 업데이트
+- octofit-tracker/backend/octofit_tracker 내 Django 파일 점검
+- settings.py의 MongoDB 연결과 CORS 설정을 Copilot이 조정
+- 해당 작업은 remember 훅 조건(작업 이후 scripts/ppt_hook.sh 실행)을 만족시키기 위한 메모
